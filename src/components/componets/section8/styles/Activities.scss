@@ -1,0 +1,82 @@
+@use "../../../../scss/abstract/" as *;
+
+.main-activities {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        overflow-y: auto;
+    }
+    .inside-activities {
+        width: 100%;
+        height: 100%;
+        .top-navbars {
+            height: 10%;
+            padding-top: 1%;
+            .mys {
+                font-size: 2rem;
+                padding-left: 5%;
+                font-weight: 700;
+                color: orangered;
+            }
+        }
+        .box-split {
+            display: flex;
+            height: 90%;
+            @include xsBreakPoint {
+                flex-direction: column;
+            }
+            @include smBreakPoint {
+                flex-direction: column;
+            }
+            @include mdBreakPoint {
+                flex-direction: column;
+            }
+            .left-activities {
+                width: 50%;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+            }
+            .right-activities {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // font-size: 5.5rem;
+                // color: orangered;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+                @include lgBreakPoint {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

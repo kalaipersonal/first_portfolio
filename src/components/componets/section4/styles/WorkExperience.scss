@@ -1,0 +1,155 @@
+@use "../../../../scss/abstract/" as *;
+
+.work-experinec-main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    @include xsBreakPoint {
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        overflow-y: auto;
+    }
+    .inside-works {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left-workexperience {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            justify-content: center;
+            .work-image {
+                width: 80%;
+                height: 80%;
+                // object-fit: cover;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+            }
+        }
+        .right-workexperience {
+            width: 50%;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            .split-num {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                // border: 2px solid blue;
+                // height: 10%;
+                @include xsBreakPoint {
+                    padding: 0px 10px;
+                }
+                @include smBreakPoint {
+                    padding: 0px 10px;
+                }
+                @include mdBreakPoint {
+                    padding: 0px 10px;
+                }
+                .work {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: orangered;
+                    @include xsBreakPoint {
+                        font-size: 1.5rem;
+                    }
+                    @include smBreakPoint {
+                        font-size: 1.5rem;
+                    }
+                    @include mdBreakPoint {
+                        font-size: 1.5rem;
+                    }
+                }
+                .numbers {
+                    padding-right: 5%;
+                }
+                .num {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: orangered;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 20px;
+                    color: white;
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    @include xsBreakPoint {
+                        padding: 10px;
+                        font-size: 1rem;
+                    }
+                    @include smBreakPoint {
+                        padding: 10px;
+                        font-size: 1rem;
+                    }
+                    @include mdBreakPoint {
+                        padding: 10px;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .inside-etxtbox {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                @include xsBreakPoint {
+                    padding: 10px 17px;
+                }
+                @include smBreakPoint {
+                    padding: 10px 17px;
+                }
+                @include mdBreakPoint {
+                    padding: 10px 17px;
+                }
+                .icons {
+                    font-size: 1.3rem;
+                    color: green;
+                }
+                .experiencetexts {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    @include xsBreakPoint {
+                        font-size: 1rem;
+                    }
+                    @include smBreakPoint {
+                        font-size: 1.1rem;
+                    }
+                    @include mdBreakPoint {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+    }
+}

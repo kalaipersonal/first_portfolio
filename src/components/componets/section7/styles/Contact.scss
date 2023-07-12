@@ -1,0 +1,119 @@
+@use "../../../../scss/abstract/" as *;
+
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    @include xsBreakPoint {
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        overflow-y: auto;
+    }
+    .inside-contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left-contact {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+
+            .imag-section {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .conatct-image {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                @include smBreakPoint {
+                    width: 70%;
+                }
+                @include mdBreakPoint {
+                    width: 70%;
+                }
+            }
+            .contacts {
+                font-size: 2.5rem;
+                font-weight: 600;
+                padding-left: 5%;
+                padding-top: 2%;
+                @include xsBreakPoint {
+                    font-size: 1.5rem;
+                }
+                @include smBreakPoint {
+                    font-size: 1.5rem;
+                }
+                @include mdBreakPoint {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .right-contact {
+            width: 50%;
+            display: flex;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+                padding-bottom: 5%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+                padding-bottom: 5%;
+            }
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .btn-primarys {
+                width: 20%;
+                // border:2px solid red;
+                background-color: orange;
+                padding: 5px;
+                border-radius: 20px;
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: white;
+                @include xsBreakPoint {
+                    width: 30%;
+                    font-size: 1.2rem;
+                }
+            }
+            .form-label {
+                color: orangered;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

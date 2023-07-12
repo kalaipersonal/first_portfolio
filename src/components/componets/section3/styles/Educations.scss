@@ -1,0 +1,208 @@
+@use "../../../../scss/abstract/" as *;
+
+.Education-main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    @include xsBreakPoint {
+        width: 100%;
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        width: 100%;
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        width: 100%;
+        overflow-y: auto;
+    }
+    .insoide-education {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        @include xsBreakPoint {
+            flex-direction: column;
+        }
+        @include smBreakPoint {
+            flex-direction: column;
+        }
+        @include mdBreakPoint {
+            flex-direction: column;
+        }
+        .left-education {
+            width: 50%;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            .stars1 {
+                position: absolute;
+                color: blue;
+                font-size: 1.3rem;
+                top: 10%;
+                left: 20%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .stars2 {
+                position: absolute;
+                color: lightcoral;
+                font-size: 1.3rem;
+                right: 65%;
+                bottom: 30%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .stars3 {
+                position: absolute;
+                color: cornflowerblue;
+                font-size: 1.3rem;
+                left: 4%;
+                bottom: 5%;
+                animation: stars 4s ease-in-out infinite;
+            }
+            .inside-educations {
+                width: 100%;
+                padding-left: 5%;
+            }
+            .edu {
+                font-weight: 600;
+            }
+            .first-edu {
+                width: 100%;
+                height: 20%;
+                display: flex;
+
+                .left-edu {
+                    width: 75%;
+                    font-size: 2rem;
+                    @include xsBreakPoint {
+                        width: 100%;
+                    }
+                    .masters {
+                        color: orangered;
+                        font-weight: 700;
+                        @include xsBreakPoint {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .kar {
+                        font-weight: 600;
+                        @include xsBreakPoint {
+                            font-size: 1.1rem;
+                        }
+                    }
+                    .mca {
+                        // color: $text-color-green;
+                        font-weight: bold;
+                        @include xsBreakPoint {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+                .right-edu {
+                    width: 25%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @include xsBreakPoint {
+                        padding-right: 3%;
+                    }
+                    .inside-box-round {
+                        width: 80%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: red;
+                        padding: 10px;
+                        border-radius: 30px;
+                        font-size: 1.2rem;
+                        color: white;
+                        font-weight: 700;
+                        cursor: pointer;
+                        @include xsBreakPoint {
+                            font-size: 0.787rem;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .right-education {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            @include xsBreakPoint {
+                width: 100%;
+            }
+            @include smBreakPoint {
+                width: 100%;
+            }
+            @include mdBreakPoint {
+                width: 100%;
+            }
+            .rounds {
+                width: 600px;
+                height: 600px;
+                border-radius: 50%;
+                position: relative;
+                object-fit: contain;
+                @include xsBreakPoint {
+                    width: 300px;
+                    height: 300px;
+                }
+                @include smBreakPoint {
+                    width: 330px;
+                    height: 330px;
+                }
+                @include mdBreakPoint {
+                    width: 450px;
+                    height: 450px;
+                }
+            }
+            .dummy {
+                position: absolute;
+                background-color: red;
+                width: 500px;
+                height: 500px;
+                border-radius: 70%;
+                top: 10px;
+                left: 15%;
+                opacity: 0.3;
+                // animation: bounces1 3s ease-in-out infinite;
+                @include xsBreakPoint {
+                    width: 300px;
+                    height: 300px;
+                }
+                @include smBreakPoint {
+                    width: 330px;
+                    height: 330px;
+                }
+                @include mdBreakPoint {
+                    width: 450px;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes bounces1 {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

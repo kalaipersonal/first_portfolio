@@ -1,0 +1,255 @@
+@use "../../../../scss/abstract/" as *;
+.about-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    @include xsBreakPoint {
+        overflow-y: auto;
+    }
+    @include smBreakPoint {
+        overflow-y: auto;
+    }
+    @include mdBreakPoint {
+        overflow-y: auto;
+    }
+    .about-inside-sections {
+        width: 100%;
+        height: 100%;
+        .about {
+            width: 100%;
+            height: 5%;
+            padding-left: 5%;
+            @include xsBreakPoint {
+                height: 8%;
+            }
+            @include smBreakPoint {
+                height: 8%;
+            }
+            @include mdBreakPoint {
+                height: 8%;
+            }
+        }
+        .inside-about-section {
+            width: 100%;
+            height: 95%;
+            display: flex;
+            @include xsBreakPoint {
+                flex-direction: column;
+                height: 100%;
+            }
+            @include smBreakPoint {
+                flex-direction: column;
+                height: 100%;
+            }
+            @include mdBreakPoint {
+                flex-direction: column;
+                height: 100%;
+            }
+            .left-about-section {
+                width: 50%;
+                height: 100%;
+                @include xsBreakPoint {
+                    width: 100%;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                }
+            }
+            .right-about-section {
+                width: 50%;
+                height: 100%;
+                position: relative;
+                @include xsBreakPoint {
+                    width: 100%;
+                    padding: 0px 7px;
+                }
+                @include smBreakPoint {
+                    width: 100%;
+                    padding: 0px 7px;
+                }
+                @include mdBreakPoint {
+                    width: 100%;
+                    padding: 0px 20px;
+                }
+                .heres {
+                    padding-left: 10px;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: orangered;
+                    @include xsBreakPoint {
+                        font-size: 1.4rem;
+                    }
+                    @include smBreakPoint {
+                        font-size: 1.4rem;
+                    }
+                }
+                .raects {
+                    font-size: 1.3rem;
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    word-break: all;
+                    width: 95%;
+                    font-weight: 600;
+                    line-height: 2;
+                    @include xsBreakPoint {
+                        font-size: 1rem;
+                    }
+                }
+                .split-here {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    gap: 10px;
+                    line-height: 2;
+
+                    .empty-circle {
+                        color: green;
+                        font-size: 2.2rem;
+                        font-weight: 700;
+                        object-fit: cover;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .text-here {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                        // color: $text-greens;
+                        // color: $text-orange-color;
+                        @include xsBreakPoint {
+                            font-size: 1.2rem;
+                        }
+                        @include smBreakPoint {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                .stars1 {
+                    position: absolute;
+                    top: 10%;
+                    right: 5%;
+                    font-size: 1.63rem;
+                    color: blue;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars2 {
+                    position: absolute;
+                    top: 40%;
+                    right: 25%;
+                    font-size: 1.63rem;
+                    color: orangered;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .stars3 {
+                    position: absolute;
+                    // top:10%;
+                    right: 5%;
+                    bottom: 20%;
+                    font-size: 1.63rem;
+                    color: cyan;
+                    animation: stars 4s ease-in-out infinite;
+                }
+                .buttons {
+                    display: flex;
+                    gap: 40px;
+                    @include xsBreakPoint {
+                        padding-bottom: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    @include smBreakPoint {
+                        padding-bottom: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    @include mdBreakPoint {
+                        padding-bottom: 5%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .hireme {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: green;
+                        padding: 10px 40px;
+                        border-radius: 20px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        color: white;
+                        @include xsBreakPoint {
+                            font-size: 1rem;
+                            padding: 10px 30px;
+                            width: 100%;
+                        }
+                        @include smBreakPoint {
+                            font-size: 1rem;
+                            padding: 10px 30px;
+                            width: 100%;
+                        }
+                        @include mdBreakPoint {
+                            font-size: 1.2rem;
+                            padding: 10px 40px;
+                            width: 100%;
+                        }
+                    }
+                    .getresume {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background-color: orange;
+                        padding: 10px 30px;
+                        border-radius: 20px;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        @include xsBreakPoint {
+                            font-size: 1rem;
+                            padding: 10px 30px;
+                            width: 100%;
+                        }
+                        @include smBreakPoint {
+                            font-size: 1rem;
+                            padding: 10px 30px;
+                            width: 100%;
+                        }
+                        @include mdBreakPoint {
+                            font-size: 1.2rem;
+                            padding: 10px 40px;
+                            width: 100%;
+                        }
+                    }
+                    .getresume:hover {
+                        // background-color: $light-rose-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes stars {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
